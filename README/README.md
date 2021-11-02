@@ -37,7 +37,7 @@ Next of Kin is here to help users keep track of their family lineage. They will 
 
 [Compnent Tree](https://whimsical.com/next-of-kin-DKwwGHgsri7kZaVf4AzdFW)
 
--Component Architecture
+Component Architecture
 
 ```
 src
@@ -58,7 +58,7 @@ src
           |__ listing.css
       |__ Tree
           |__ tree.jsx
-          |__ tree.css          
+          |__ tree.css
       |__ Details
           |__ details.jsx
           |__ details.css
@@ -76,7 +76,7 @@ src
           |__ login.css
 ```
 
--Time Estimtates
+Time Estimtates
 | Day | Deliverable | Status |
 | --------- | --------------------------- | ---------- |
 | 11/01/21 | Work on README/pitch | complete |
@@ -89,6 +89,20 @@ src
 | 11/08/21 | Present | incomplete |
 | 11/08/21+ | Post MVP | incomplete |
 
+| Component            | Priority | Estimated Time | Time Invested |
+| -------------------- | :------: | :------------: | :-----------: |
+| Setting up back end  |    H     |      3hrs      |       ?       |
+| Models               |    M     |      3hrs      |       ?       |
+| User Authentication  |    H     |      6hrs      |       ?       |
+| Routes/Controller    |    H     |      6hrs      |       ?       |
+| Setting up front end |    H     |      3hrs      |       ?       |
+| Screens & routes     |    H     |      3hrs      |       ?       |
+| Forms                |    H     |      6hrs      |       ?       |
+| Axios calls          |    H     |      3hrs      |       ?       |
+| Display logic        |    L     |      3hrs      |       ?       |
+| CSS                  |    L     |      6hrs      |       ?       |
+| Total                |    H     |     42hrs      |       ?       |
+
 ### Server (Backend)
 
 ![ERD](/ERD.png)
@@ -99,4 +113,12 @@ src
 
 ## Code Showcase
 
+```
+
+```
+
 ## Code Issues & Resolutions
+
+```
+
+```
