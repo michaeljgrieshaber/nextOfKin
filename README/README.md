@@ -4,7 +4,7 @@
 
 ## Overview
 
-Next of Kin is here to help users keep track of their family lineage. They will be able to create family trees and fill the trees with individule family members. Users will also be able to share their trees with others so they can have a cheatsheet to remember their friends large families.
+Next of Kin is here to help users keep track of their family lineage. They will be able to create family trees and fill the trees with individule family members. Users will also be able to share their trees with others so they can have a cheatsheet to remember their friends large families. Anyone with a link can view trees and details. In order to create/edit trees, create/edit people in trees, or create/delete comments you will need to be logged into the site.
 
 ## MVP
 
@@ -110,6 +110,8 @@ Time Estimtates
 ## Post MVP
 
 1. Render each tree in generation order
+2. Use Cloudinary to allow users to upload images directly
+3. Only allow users to edit their own trees but allow other users to leave comments.
 
 ## Code Showcase
 
