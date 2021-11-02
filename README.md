@@ -29,6 +29,7 @@ Next of Kin is here to help users keep track of their family lineage. They will 
 | Ruby         | Back end server                                       |
 | Pry          | Testing                                               |
 | Bcrypt       | User authentication                                   |
+| JWT          | For cryptic login                                     |
 | Cors         | Controlling what site can make requests to the server |
 
 ### Client (Front End)
@@ -59,15 +60,18 @@ src
       |__ Tree
           |__ tree.jsx
           |__ tree.css
-      |__ Details
-          |__ details.jsx
-          |__ details.css
-      |__ Create
-          |__ create.jsx
-          |__ create.css
-      |__ Edit
-          |__ edit.jsx
-          |__ edit.css
+      |__ CreateTree
+          |__ createTree.jsx
+          |__ CreateTree.css    
+      |__ DetailsPerson
+          |__ detailsPerson.jsx
+          |__ detailsPerson.css
+      |__ CreatePerson
+          |__ createPerson.jsx
+          |__ createPerson.css
+      |__ EditPerson
+          |__ editPerson.jsx
+          |__ editPerson.css
       |__ Register
           |__ register.jsx
           |__ register.css
