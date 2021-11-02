@@ -29,6 +29,7 @@ Next of Kin is here to help users keep track of their family lineage. They will 
 | Ruby         | Back end server                                       |
 | Pry          | Testing                                               |
 | Bcrypt       | User authentication                                   |
+| JWT          | For cryptic login                                     |
 | Cors         | Controlling what site can make requests to the server |
 
 ### Client (Front End)
