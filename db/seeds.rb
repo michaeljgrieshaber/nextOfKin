@@ -27,15 +27,19 @@ puts "#{Tree.count} trees created"
 
 @person_shmi = Person.create!(name: 'Shmi', dob: '1/1/1979', dod: '1/1/2020', img_url: 'https://picsum.photos/200/300', tree_id: @tree_skywalker.id)
 @person_anakin = Person.create!(name: 'Anakin', dob: '1/1/1979', dod: '1/1/2020', img_url: 'https://picsum.photos/200/300', tree_id: @tree_skywalker.id)
-@person_padme = Person.create!(name: 'Padme', dob: '1/1/1979', dod: '1/1/2020', img_url: 'https://picsum.photos/200/300', tree_id: @tree_skywalker.id)
+@person_padme = Person.create!(name: 'Padme', dob: '1/1/1979', dod: '1/1/2020', img_url: 'https://picsum.photos/200/300', tree_id: @tree_skywalker.id,
+person_id: @person_anakin.id)
 @person_leia = Person.create!(name: 'Leia', dob: '1/1/1979', dod: '1/1/2020', img_url: 'https://picsum.photos/200/300', tree_id: @tree_skywalker.id)
-@person_luke = Person.create!(name: 'Luke', dob: '1/1/1979', dod: '1/1/2020', img_url: 'https://picsum.photos/200/300', tree_id: @tree_skywalker.id, 
-person_id: @person_leia.id)
+@person_luke = Person.create!(name: 'Luke', dob: '1/1/1979', dod: '1/1/2020', img_url: 'https://picsum.photos/200/300', tree_id: @tree_skywalker.id)
+
+
+# if (padme) person_id(anakin's id) == true, then the where person_id(anakin's id) = id (anakin's id), make their (anakin)person_id = you (padme's id)
 
 puts "#{Person.count} people created"
 
-Child_parent.create!(parent_id: @person_anakin.id, child_id: @person_luke.id)
-
-@person_luke.@person_anakin
-
-puts "#{Child_parent.count} relationships created"
+# do i need to fill out the join table of child_parent here?
+  # Child_parent.create!(parent_id: @person_anakin.id, child_id: @person_luke.id)
+  # puts Person.id.find{|i| i == 5 } 
+  # puts Person.id :id == 5
+  # << Person.@person_anakin
+  # puts "#{Child_parent.count} relationships created"

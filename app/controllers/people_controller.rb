@@ -1,5 +1,6 @@
 class PeopleController < ApplicationController
-  before_action :set_person, only: [:show, :update, :destroy]
+  before_action :set_person, only: [ :show, :update, :destroy ]
+  before_action :authorize_request, only: [ :create, :update, :destroy ]
 
   # GET /people
   def index
@@ -16,6 +17,7 @@ class PeopleController < ApplicationController
   # POST /people
   def create
     @person = Person.new(person_params)
+    # @person.user = @current_user
 
     if @person.save
       render json: @person, status: :created, location: @person

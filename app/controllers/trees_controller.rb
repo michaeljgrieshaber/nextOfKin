@@ -1,5 +1,8 @@
 class TreesController < ApplicationController
-  before_action :set_tree, only: [:show, :update, :destroy]
+  before_action :set_tree, only: [:show]
+  #  :update, :destroy]
+
+
 
   # GET /trees
   def index
@@ -38,14 +41,14 @@ class TreesController < ApplicationController
 #   @tree.destroy
 # end
 
-  private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_tree
-      @tree = Tree.find(params[:id])
-    end
+  # private
+  #   # Use callbacks to share common setup or constraints between actions.
+  #   def set_tree
+  #     @tree = Tree.find(params[:id])
+  #   end
 
-    # Only allow a list of trusted parameters through.
-    def tree_params
-      params.require(:tree).permit(:name)
-    end
+  #   # Only allow a list of trusted parameters through.
+  #   def tree_params
+  #     params.require(:tree).permit(:name)
+  #   end
 end
