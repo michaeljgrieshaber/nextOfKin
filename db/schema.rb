@@ -10,10 +10,34 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_11_02_161956) do
+ActiveRecord::Schema.define(version: 2021_11_03_001740) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "children_parents", id: false, force: :cascade do |t|
+    t.bigint "parent_id", null: false
+    t.bigint "child_id", null: false
+  end
+
+  create_table "people", force: :cascade do |t|
+    t.string "name"
+    t.string "dob"
+    t.string "dod"
+    t.string "img_url"
+    t.bigint "tree_id", null: false
+    t.bigint "person_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["person_id"], name: "index_people_on_person_id"
+    t.index ["tree_id"], name: "index_people_on_tree_id"
+  end
+
+  create_table "trees", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "name"
@@ -23,4 +47,6 @@ ActiveRecord::Schema.define(version: 2021_11_02_161956) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  add_foreign_key "people", "people"
+  add_foreign_key "people", "trees"
 end
